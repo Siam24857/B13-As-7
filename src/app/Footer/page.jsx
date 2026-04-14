@@ -8,9 +8,9 @@ import logoxl_3 from '@/assets/instagram.png';
 
 const Footer = () => {
     return (
-        <div className="mt-20 ">
+        <div className=" ">
             <div className='   bg-[#244D3F] text-white  '>
-                <div className="p-22 container mx-auto space-y-10">
+                <div className="p-[80px] container mx-auto space-y-10">
                  <div className="flex justify-center">
                     <Image width={400} height={200} alt="name of comapny" src={logoxl}></Image>
                  </div>

@@ -1,12 +1,18 @@
 import { Frijole } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useContext } from 'react';
+import { Countnumber } from '../context/AuthContext';
 
-const Freinds = ({freind}) => {
+const Freinds = ({freind }) => {
+
+   
+
+
+
     const {name, next_due_date, status, tags} =freind
     return (
-        <Link href="/Ferinddettails" className='bg-white rounded-2xl shadow-xl '>
+        <Link href={`/Feirendid/${freind.id}`} className='bg-white rounded-2xl shadow-xl '>
             <div className='p-6 space-y-4'>
                 <div className='flex justify-center items-center'>
                 <Image width={100} height={100} src={freind.picture} alt={name} className='rounded-full'></Image>

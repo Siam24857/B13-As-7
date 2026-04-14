@@ -2,6 +2,11 @@ import React from 'react';
 import Freinds from './Freinds';
 
 const Allfreinds = async () => {
+    
+
+    const hadlecout = ()=> {
+        const value = valsecount;
+    }
 
     const res = await fetch('http://localhost:3000/Data.json');  
     const friends = await res.json();  
@@ -13,7 +18,7 @@ const Allfreinds = async () => {
             <h4>Your friends</h4>
             <div className='grid grid-cols-4 gap-8 '>
                 {
-                    friends.map(freind => <Freinds key={freind.id} freind={freind}></Freinds>)
+                    friends.map(freind => <Freinds key={freind.id}  freind={freind}></Freinds>)
                 }
             </div>
         </div>

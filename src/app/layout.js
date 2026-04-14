@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Navber/page";
 import Footer from "./Footer/page";
+import AuthProvider, { Countnumber } from "./context/AuthContext"; // এই লাইন যোগ করুন
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,16 +21,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      data-theme ='Light'
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">
-         <Navbar></Navbar>
-        {children}
-        </body> 
-        <Footer></Footer>
+    <html lang="en" data-theme="light" suppressHydrationWarning>
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
+         
+        <AuthProvider>  
+          <Navbar />
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
+        </AuthProvider>  
+         
+      </body>
     </html>
   );
 }

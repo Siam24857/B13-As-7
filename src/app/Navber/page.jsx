@@ -3,6 +3,8 @@ import Image from "next/image";
 import logo from '@/assets/logo.png';
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { RiHome2Line, RiTimeLine } from "react-icons/ri";
+import { ImStatsDots } from "react-icons/im";
 
 const Navbar = () => {
 
@@ -21,19 +23,19 @@ const Navbar = () => {
                         href="/" 
                         className={`btn     ${pathname === "/" ? 'bg-[#244D3F] text-white' : ''}`}
                     >
-                        Home
+                     <RiHome2Line />   Home
+                    </Link>
+                    <Link 
+                        href="/Reportinfriends" 
+                        className={`btn    ${pathname === "/Reportinfriends" ? 'bg-[#244D3F] text-white' : ''}`}
+                    >
+                     <RiTimeLine />   Timeline
                     </Link>
                     <Link 
                         href="/timeline" 
                         className={`btn    ${pathname === "/timeline" ? 'bg-[#244D3F] text-white' : ''}`}
                     >
-                        Timeline
-                    </Link>
-                    <Link 
-                        href="/timeline" 
-                        className={`btn    ${pathname === "/timeline" ? 'bg-[#244D3F] text-white' : ''}`}
-                    >
-                        Home
+                       <ImStatsDots />  Stats
                     </Link>
                 </div>
 
