@@ -6,6 +6,7 @@ import logoxl_5 from '@/assets/video.png';
 
 const Report = ({ friend, tech }) => {
     const { name, picture, next_due_date } = friend || {};
+     const currentDate = new Date();
     
     if (!friend) return null;
     
@@ -25,7 +26,7 @@ const Report = ({ friend, tech }) => {
                         <h5 className="text-2xl">
                             {tech} <span className="text-gray-400">with {name}</span>
                         </h5>
-                        <p className="text-gray-400">{next_due_date}</p>
+                        <p className="text-gray-400">{currentDate.toLocaleDateString()}</p>
                     </div>
                 </div>
             </div>

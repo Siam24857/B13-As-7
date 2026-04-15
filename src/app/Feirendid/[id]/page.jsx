@@ -6,6 +6,9 @@ import logoxl_3 from '@/assets/call.png';
 import logoxl_4 from '@/assets/text.png';
 import logoxl_5 from '@/assets/video.png';
 import Dettails from './Dettails';
+import { MdOutlineNotificationsPaused } from 'react-icons/md';
+import { PiArchiveBold } from 'react-icons/pi';
+import { RiDeleteBinLine } from 'react-icons/ri';
 
 
 const Ferinddettails = async ({ params }) => {
@@ -47,9 +50,9 @@ const Ferinddettails = async ({ params }) => {
                            
                         </div>
                          <div className='space-y-4 mt-4'>
-                             <div className='btn w-full bg-white'>Snooze 2 weeks</div>
-                        <div className='btn w-full bg-white'>Archive</div>
-                        <div className='btn w-full bg-white'>Delete</div>
+                             <div className='btn w-full bg-white'><MdOutlineNotificationsPaused /> Snooze 2 weeks</div>
+                        <div className='btn w-full bg-white'><PiArchiveBold /> Archive</div>
+                        <div className='btn w-full bg-white text-red-500'><RiDeleteBinLine /> Delete</div>
                         </div>
                        
                     </div>
@@ -60,7 +63,7 @@ const Ferinddettails = async ({ params }) => {
 
               <div className='space-y-10'>
                 <div>
-                    <div className='allde grid grid-cols-1 gmd:rid-cols-3 gap-3  '>
+                    <div className='allde grid grid-cols-1 md:grid-cols-3 gap-3  '>
                         <div className='p-22 rounded-2xl shadow-xl text-center bg-white'>
                             <h4 className='text-4xl font-bold'>{days_since_contact}</h4>
                             <p className='text-center'>Days Since Contact</p>
