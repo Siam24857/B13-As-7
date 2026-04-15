@@ -33,7 +33,7 @@ const Dettails = ({ freindetails, children }) => {
         <div>
             <div className='p-12 rounded-2xl shadow-xl text-center bg-white'>
                 <h4 className='text-left mb-4 text-2xl'>Quick Check-In</h4>
-                <div className='grid grid-cols-3 gap-4'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
                     <div
                         className='bg-[#F8FAFC] space-y-3 rounded-2xl btn p-15 flex-col-reverse cursor-pointer'
                         onClick={() => reporthandle("call")}

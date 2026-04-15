@@ -19,9 +19,9 @@ const Ferinddettails = async ({ params }) => {
     return (
         <div className='  p-5 bg-[#F8FAFC]'>
             <div className='container  mx-auto'>
-            <div className='flex justify-center gap-5 '>
-                <div className='flex justify-center b'>
-                    <div className='pro'>
+            <div className=' flex-none md:flex justify-center gap-5 '>
+                <div className=' flex-none md:flex justify-center '>
+                    <div className='pro mb-3'>
                         <div className='bg-white rounded-2xl shadow-xl w-[350px]'>
                             <div className='p-6 space-y-4'>
                                 <div className='flex justify-center items-center'>
@@ -60,7 +60,7 @@ const Ferinddettails = async ({ params }) => {
 
               <div className='space-y-10'>
                 <div>
-                    <div className='allde grid grid-cols-3 gap-3  '>
+                    <div className='allde grid grid-cols-1 gmd:rid-cols-3 gap-3  '>
                         <div className='p-22 rounded-2xl shadow-xl text-center bg-white'>
                             <h4 className='text-4xl font-bold'>{days_since_contact}</h4>
                             <p className='text-center'>Days Since Contact</p>

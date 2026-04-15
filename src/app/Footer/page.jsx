@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
 
 
-            <div className="flex justify-between items-center  border-t border-gray-500 pt-5">
+            <div className=" flex-none md:flex justify-between items-center  border-t border-gray-500 pt-5">
                 <div>
                     <p className="text-gray-400">© 2026 KeenKeeper. All rights reserved.</p>
                 </div>

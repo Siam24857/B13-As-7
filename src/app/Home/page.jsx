@@ -12,20 +12,20 @@ relationships that matter most.</p>
    </div>
 
 
-<div className='flex justify-center items-center gap-8'>
-    <div className='bg-white shadow-xl p-10 w-[260px] rounded-2xl space-y-3 '>
+<div className='flex-none md:flex justify-center items-center  gap-8'>
+    <div className='bg-white shadow-xl p-10 w-[260px] rounded-2xl space-y-3  mt-3  '>
         <h3 className='text-3xl text-center font-bold'>10</h3>
         <p className='text-gray-400  text-center'>Total Friends</p>
     </div>
-    <div className='bg-white shadow-xl p-8  w-[260px] rounded-2xl space-y-3 '>
+    <div className='bg-white shadow-xl p-8  w-[260px] rounded-2xl space-y-3  mt-3  '>
         <h3 className='text-3xl text-center font-bold'>3</h3>
         <p className='text-gray-400 text-center'>On Track</p>
     </div>
-    <div className='bg-white shadow-xl p-8  w-[260px] rounded-2xl space-y-3 '>
+    <div className='bg-white shadow-xl p-8  w-[260px] rounded-2xl space-y-3  mt-3 '>
         <h3 className='text-3xl text-center font-bold'>6</h3>
         <p className='text-gray-400  text-center'>Need Attention</p>
     </div>
-    <div className='bg-white shadow-xl p-8  w-[260px] rounded-2xl space-y-3 '>
+    <div className='bg-white shadow-xl p-8  w-[260px] rounded-2xl space-y-3  mt-3  '>
         <h3 className='text-3xl text-center font-bold'>8</h3>
         <p className='text-gray-400  text-center'>Interactions This Month</p>
     </div>
