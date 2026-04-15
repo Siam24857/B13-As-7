@@ -2,7 +2,7 @@ import React from 'react';
 
 const loaing = () => {
     return (
-        <div className='flexn justify-center items-center  '>
+        <div className='flex justify-center items-center  m-10  '>
             <span className="loading loading-spinner text-neutral"></span>
         </div>
     );

@@ -1,11 +1,13 @@
 import React from 'react';
 
-const loaing = () => {
+const Loading = () => {
     return (
-        <div className='flexn justify-center items-center  '>
-            <span className="loading loading-spinner text-neutral"></span>
+        <div className='flex justify-center items-center h-[400px] '>
+            <div>
+                <span className="loading loading-spinner text-neutral w-[50px] mx-auto"></span>
+            </div>
         </div>
     );
 };
 
-export default loaing;
+export default Loading;

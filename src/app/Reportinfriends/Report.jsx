@@ -9,7 +9,7 @@ const Report = ({ friend, tech }) => {
     
     if (!friend) return null;
     
-    // টেক অনুযায়ী সঠিক ইমেজ সিলেক্ট
+     
     let techImage;
     if (tech === "call") techImage = logoxl_3;
     else if (tech === "text") techImage = logoxl_4;

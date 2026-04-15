@@ -9,13 +9,24 @@ import { AuthContext } from '@/app/context/AuthContext';
 import { toast, ToastContainer } from 'react-toastify';
 
 const Dettails = ({ freindetails, children }) => {
-    const { setwho, settech, who, tech } = useContext(AuthContext);
+    const { who, setwho, tech, settech, text, settext, call, setcall, video, setvideo } = useContext(AuthContext);
 
     const reporthandle = (report) => {
         setwho([...who, freindetails]); 
         settech([...tech, report]);  
-        console.log("Saved:", report, freindetails);
+        
         toast(`${report} with ${freindetails.name}`)
+
+          if(report === "text"){
+        settext([...text, freindetails])
+          }
+          if(report === "call"){
+        setcall([...call, freindetails])
+          }
+          if(report === "video"){
+        setvideo([...video, freindetails])
+          }
+
     };
 
     return (

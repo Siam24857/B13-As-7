@@ -32,8 +32,8 @@ const Navbar = () => {
                      <RiTimeLine />   Timeline
                     </Link>
                     <Link 
-                        href="/timeline" 
-                        className={`btn    ${pathname === "/timeline" ? 'bg-[#244D3F] text-white' : ''}`}
+                        href="/StatusDettails" 
+                        className={`btn    ${pathname === "/StatusDettails" ? 'bg-[#244D3F] text-white' : ''}`}
                     >
                        <ImStatsDots />  Stats
                     </Link>
