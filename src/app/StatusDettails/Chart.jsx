@@ -11,9 +11,10 @@ const Chart = () => {
     const data = [
 
 
-  { name: 'text', value: text.length, fill: "#4e038c" },
-{  name:'Video', value: video.length, fill: "#10450d" },
-  {  name:'Call', value: call.length, fill: "#19d10d" },
+   {  name: 'text', value: text.length,  fill: "#4e038c" },
+  {  name:'Video', value: video.length, fill: "#10450d" },
+  {  name:'Call',  value: call.length,  fill: "#19d10d" },
+ 
    
  
 ];
