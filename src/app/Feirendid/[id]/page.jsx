@@ -16,7 +16,9 @@ const Ferinddettails = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('/Data.json')
+        fetch('http://localhost:3000/Data.json',{
+         cache: "no-store"
+        })
             .then(res => res.json())
             .then(data => {
                 const friend = data.find(f => f.id === Number(params.id));
