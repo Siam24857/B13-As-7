@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",   
+  // output: "export",   
 
   images: {
     unoptimized: true,  
@@ -9,8 +9,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'randomuser.me',
         port: '',
-        pathname: '**',
-        search: '',
+        pathname: '/**',  // 
       },
     ],
   },

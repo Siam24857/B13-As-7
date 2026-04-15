@@ -34,3 +34,28 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+1. Project Name:
+FriendSphere
+
+2 Short Description:
+A friendship management app that helps users track and maintain their relationships by monitoring contact history, setting goals, and receiving reminders to stay connected with friends.
+
+3. Technologies Used:
+Next.js 
+React
+Tailwind CSS
+DaisyUI
+React Icons
+Local JSON for data storage
+
+4. 3 Key Features:
+Friendship Tracking Dashboard
+Track days since last contact
+Moitor friendship status (overdue, on-track, almost due)
+Set and track relationship goals
+Interaction History
+
+ 
