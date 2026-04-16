@@ -7,14 +7,13 @@ import Dettails from './Dettails';
 import { MdOutlineNotificationsPaused } from 'react-icons/md';
 import { PiArchiveBold } from 'react-icons/pi';
 import { RiDeleteBinLine } from 'react-icons/ri';
-
-// ফোর্স ডাইনামিক রেন্ডারিং - বিল্ড টাইমে রেন্ডার হবে না
+ 
 export const dynamic = 'force-dynamic';
 
 const FriendDetails = async ({ params }) => {
     const { id } = await params;
     
-    // ডাটা ফেচ করা
+   
     const res = await fetch('http://localhost:3000/Data.json', {
         cache: 'no-store'
     });
@@ -93,17 +92,60 @@ const FriendDetails = async ({ params }) => {
                         <Dettails freindetails={freindetails} />
 
                         <div className='history space-y-8 mt-4 bg-white p-9 rounded-3xl shadow-xl'>
-                            <div className='flex justify-between items-center'>
+                            <div className='flex justify-between'>
                                 <h3 className='text-3xl'>Recent Interactions</h3>
-                                <button className='btn'>Full History</button>
+                                <p className='btn'>Full History</p>
                             </div>
+                            
+                         
                             <div className='flex justify-between mt-3 border-t border-gray-300 p-7 bg-white'>
                                 <div className='flex gap-3'>
                                     <div>
-                                        <Image width={50} height={50} alt='call' src={logoxl_4} />
+                                        <Image width={50} height={50} alt='call' src={logoxl_4}></Image>
                                     </div>
                                     <div>
                                         <h4>Text</h4>
+                                        <p>Asked for career advice</p>
+                                    </div>
+                                </div>
+                                <p>Jan 28, 2026</p>
+                            </div>
+                             
+                            <div className='flex justify-between mt-3 border-t border-gray-300 p-7 bg-white'>
+                                <div className='flex gap-3'>
+                                    <div>
+                                        <Image width={50} height={50} alt='call' src={logoxl_3}></Image>
+                                    </div>
+                                    <div>
+                                        <h4>Meetup</h4>
+                                        <p>Industry conference meetup</p>
+                                    </div>
+                                </div>
+                                <p>Jan 28, 2026</p>
+                            </div>
+                            
+                            
+                            <div className='flex justify-between mt-3 border-t border-gray-300 p-7 bg-white'>
+                                <div className='flex gap-3'>
+                                    <div>
+                                        <Image width={50} height={50} alt='call' src={logoxl_5}></Image>
+                                    </div>
+                                    <div>
+                                        <h4>Video</h4>
+                                        <p>Asked for career advice</p>
+                                    </div>
+                                </div>
+                                <p>Jan 28, 2026</p>
+                            </div>
+                            
+                          
+                            <div className='flex justify-between mt-3 border-t border-gray-300 p-7 bg-white'>
+                                <div className='flex gap-3'>
+                                    <div>
+                                        <Image width={50} height={50} alt='call' src={logoxl_3}></Image>
+                                    </div>
+                                    <div>
+                                        <h4>Meetup</h4>
                                         <p>Asked for career advice</p>
                                     </div>
                                 </div>
