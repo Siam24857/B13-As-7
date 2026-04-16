@@ -1,5 +1,7 @@
+'use client';
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'next/navigation';
 import logoxl_3 from '@/assets/call.png';
 import logoxl_4 from '@/assets/text.png';
 import logoxl_5 from '@/assets/video.png';
@@ -8,18 +10,28 @@ import { MdOutlineNotificationsPaused } from 'react-icons/md';
 import { PiArchiveBold } from 'react-icons/pi';
 import { RiDeleteBinLine } from 'react-icons/ri';
 
- 
-export const dynamic = 'force-dynamic';
+const FriendDetails = () => {
+    const params = useParams();
+    const [freindetails, setFreindetails] = useState(null);
+    const [loading, setLoading] = useState(true);
 
-const FriendDetails = async ({ params }) => {
-    const { id } = await params;
-    
-    
-    const res = await fetch('/Data.json', {
-        cache: 'no-store'
-    });
-    const data = await res.json();
-    const freindetails = data.find(f => f.id === Number(id));
+    useEffect(() => {
+        fetch('/Data.json')
+            .then(res => res.json())
+            .then(data => {
+                const friend = data.find(f => f.id === Number(params.id));
+                setFreindetails(friend);
+                setLoading(false);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                setLoading(false);
+            });
+    }, [params.id]);
+
+    if (loading) {
+        return <div className="text-center p-10">Loading...</div>;
+    }
 
     if (!freindetails) {
         return <div className="text-center p-10">Friend not found</div>;
@@ -100,7 +112,7 @@ const FriendDetails = async ({ params }) => {
                             <div className='flex justify-between mt-3 border-t border-gray-300 p-7 bg-white'>
                                 <div className='flex gap-3'>
                                     <div>
-                                        <Image width={50} height={50} alt='call' src={logoxl_4} />
+                                        <Image width={50} height={50} alt='call' src={logoxl_4}></Image>
                                     </div>
                                     <div>
                                         <h4>Text</h4>
@@ -112,7 +124,7 @@ const FriendDetails = async ({ params }) => {
                             <div className='flex justify-between mt-3 border-t border-gray-300 p-7 bg-white'>
                                 <div className='flex gap-3'>
                                     <div>
-                                        <Image width={50} height={50} alt='call' src={logoxl_3} />
+                                        <Image width={50} height={50} alt='call' src={logoxl_3}></Image>
                                     </div>
                                     <div>
                                         <h4>Meetup</h4>
@@ -124,7 +136,7 @@ const FriendDetails = async ({ params }) => {
                             <div className='flex justify-between mt-3 border-t border-gray-300 p-7 bg-white'>
                                 <div className='flex gap-3'>
                                     <div>
-                                        <Image width={50} height={50} alt='call' src={logoxl_5} />
+                                        <Image width={50} height={50} alt='call' src={logoxl_5}></Image>
                                     </div>
                                     <div>
                                         <h4>Video</h4>
@@ -136,7 +148,7 @@ const FriendDetails = async ({ params }) => {
                             <div className='flex justify-between mt-3 border-t border-gray-300 p-7 bg-white'>
                                 <div className='flex gap-3'>
                                     <div>
-                                        <Image width={50} height={50} alt='call' src={logoxl_3} />
+                                        <Image width={50} height={50} alt='call' src={logoxl_3}></Image>
                                     </div>
                                     <div>
                                         <h4>Meetup</h4>
