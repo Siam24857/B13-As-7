@@ -12,7 +12,7 @@ relationships that matter most.</p>
    </div>
 
 
-<div className='flex-none md:flex justify-center items-center  gap-8'>
+<div className='flex-none md:flex justify-center items-center w-11/12 mx-auto  gap-8'>
     <div className='bg-white shadow-xl p-10 w-[260px] rounded-2xl space-y-3  mt-3  '>
         <h3 className='text-3xl text-center font-bold'>10</h3>
         <p className='text-gray-400  text-center'>Total Friends</p>
