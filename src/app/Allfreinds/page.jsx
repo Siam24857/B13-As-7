@@ -7,11 +7,12 @@ const Allfreinds = async () => {
     const hadlecout = ()=> {
         const value = valsecount;
     }
+const res = await fetch('http://localhost:3000/Data.json', {
+    cache: 'no-store'
+});
+const friends = await res.json(); 
 
-    const res = await fetch('http://localhost:3000/Data.json');  
-    const friends = await res.json();  
-
-    console.log(friends);
+    
 
     return (
         <div className='space-y-5 mt-10'>
