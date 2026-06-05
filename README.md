@@ -3,7 +3,7 @@
 # KeenKeeper
 
 ### Live URL
-https://my-keen-keeper-saima.netlify.app/
+https://keenkeeper-web-platform.netlify.app
 
 ### Description
 KeenKeeper is a React-based friendship tracking application designed to help users maintain meaningful relationships. The application allows users to track interactions such as calls, texts, and video chats, view detailed friend profiles, manage friendship goals, and analyze communication patterns through visual analytics.
