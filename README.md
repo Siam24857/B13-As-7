@@ -1,24 +1,23 @@
+Project Name
 
+Keenkeeper
 
-1. Project Name:
-FriendSphere
+Live Site
 
-2 Short Description:
-A friendship management app that helps users track and maintain their relationships by monitoring contact history, setting goals, and receiving reminders to stay connected with friends.
+Live Site: [Add Your Live Website URL Here]
 
-3. Technologies Used:
-Next.js 
+Short Description
+
+FriendSphere is a friendship management application that helps users maintain meaningful relationships by tracking interactions, monitoring friendship status, setting connection goals, and receiving reminders to stay in touch with friends.
+
+Technologies Used
+Next.js
 React
 Tailwind CSS
 DaisyUI
 React Icons
-Local JSON for data storage
-
-4. 3 Key Features:
-Friendship Tracking Dashboard
-Track days since last contact
-Moitor friendship status (overdue, on-track, almost due)
-Set and track relationship goals
-Interaction History.
-
- 
+Local JSON (Data Storage)
+Key Features
+📊 Friendship Tracking Dashboard – View and manage all friendships from a centralized dashboard.
+⏳ Contact & Status Monitoring – Track days since the last interaction and monitor friendship status (On-Track, Almost Due, Overdue).
+🎯 Relationship Goals & Interaction History – Set friendship goals, track progress, and maintain a detailed history of interactions.
